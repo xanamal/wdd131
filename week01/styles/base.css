@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #ab37d6;
+    --secondary-color: #000000;
+    --font-family: Arial, sans-serif;
+    --font-size: 16px;
+    --line-height: 1.5;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--secondary-color);
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
