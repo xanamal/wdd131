@@ -46,21 +46,24 @@ nav ul {
 }
 
 .profile-pic {
-    width: 250px;
+    width: 350px;
     height: auto;
-    border-radius: 98%;
+    border-radius: 99%;
     display: grid;
     justify-content: center;
+    border-color: var(--secondary-color);
+    border-width: 10px;
+    border-style: solid;
 }
 
 .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     align-items: center;
     gap: 20px;
     border: #eb8d13 solid 15px;
     border-radius: 5%;
-    padding: 20px;
+    padding: 5rem 5rem 5rem 5rem;
 }
 
 main {
@@ -74,4 +77,6 @@ h1 {
     color: var(--tertiary-color);
     text-align: center;
 }
+
+
 
