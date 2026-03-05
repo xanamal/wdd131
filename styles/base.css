@@ -2,7 +2,8 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #eb8d13;
-    --font-family: Arial, sans-serif;
+    --tertiary-color: #111111;
+    --font-family: 'Times New Roman', sans-serif;
     --font-size: 16px;
     --line-height: 1.5;
 }
@@ -10,17 +11,30 @@
 header {
     display: grid;
     grid-template-columns: 150px auto;
+    grid-row: auto;
     align-items: center;
+    margin: auto;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--tertiary-color);
+   
 }
-span #course-title {
+span {
     font-size: 1.5em;
     font-weight: bold;
     padding-left: 20px;
     display: grid;
     justify-content: center;
 }
+
+.menu a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+
+}
+
 
 nav ul {
     list-style: none;
@@ -34,15 +48,30 @@ nav ul {
 .profile-pic {
     width: 250px;
     height: auto;
-    border-radius: 90%;
+    border-radius: 98%;
     display: grid;
-    justify-content: right;
+    justify-content: center;
 }
 
-.aboutme {
+.card-aboutme {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     gap: 20px;
     border: #eb8d13 solid 15px;
     border-radius: 5%;
+    padding: 20px;
 }
+
+main {
+    display: grid;
+    gap: 20px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--tertiary-color);
+    text-align: center;
+}
+
