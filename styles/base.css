@@ -7,12 +7,19 @@
     --line-height: 1.5;
 }
 
-header, span {
+header {
     display: grid;
     grid-template-columns: 150px auto;
     align-items: center;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+span #course-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 20px;
+    display: grid;
+    justify-content: center;
 }
 
 nav ul {
@@ -30,4 +37,12 @@ nav ul {
     border-radius: 90%;
     display: grid;
     justify-content: right;
+}
+
+.aboutme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: #eb8d13 solid 15px;
+    border-radius: 5%;
 }
