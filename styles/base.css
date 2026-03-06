@@ -6,6 +6,7 @@
     --font-family: 'Times New Roman', sans-serif;
     --font-size: 16px;
     --line-height: 1.5;
+    --color1: #0728e1;
 }
 
 header {
@@ -35,6 +36,11 @@ span {
 
 }
 
+.menu a:hover {
+    background-color: var(--color1);
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
 
 nav ul {
     list-style: none;
@@ -75,6 +81,13 @@ main {
 h1 {
     font-size: 2.5em;
     color: var(--tertiary-color);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: var(--tertiary-color);
+    margin-top: 0;
     text-align: center;
 }
 
