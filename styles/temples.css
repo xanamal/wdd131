@@ -1,0 +1,18 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main h1 {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+}
+
+.temple-card figcaption {
+    text-align: center;
+}
