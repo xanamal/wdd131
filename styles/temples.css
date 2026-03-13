@@ -1,11 +1,36 @@
-main {
+.temples-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-main h1 {
+.temples-main h1 {
     grid-column: 1 / 4;
     text-align: center;
+}
+
+#menu-button {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        
+    }
+
+    #menu-button {
+        display: flex;
+    }
 }
 
 .temple-card img {
