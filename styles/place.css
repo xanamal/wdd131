@@ -1,0 +1,78 @@
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent-color: #007bff;
+    --font-family: 'Arial', sans-serif;
+    --color1: #26bfbc;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--accent-color);
+    padding: 20px;
+    text-align: center;
+    border: var(--color1) 5px solid;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: var(--accent-color);
+    border: var(--color1) 5px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card div h3 {
+    grid-column: 2;
+    text-align: left;
+    margin: .25rem;
+}
+.card div p {
+    grid-column: 3;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin: .25rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    gap: 10px;
+}
+
+h1{
+    color: var(--secondary-color);
+    padding: 10px; ;
+}
+
+.hero , img{
+    width: 100%;
+    aspect-ratio: 1500/1000;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: var(--color1) 5px solid;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
