@@ -1,5 +1,21 @@
-@media screen and (min-width: 768px) {
-    .line {
-        display: none;
+@media screen and (min-width: 800px) {
+    body {
+        margin: 0;
+        padding: 0;
     }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
 }
