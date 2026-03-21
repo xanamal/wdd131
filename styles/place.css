@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-.weather-title::after {
-    content: ☀️;
-}
-
 header{
     background-color: var(--accent-color);
     text-align: center;
