@@ -51,6 +51,11 @@ h1{
     position: relative; 
 }
 
+.weather-title::after {
+    content: " ☀️";
+    
+}
+
 .hero img {
     width: 100%;
     height: auto;
