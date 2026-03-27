@@ -75,4 +75,38 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  ];
+
+  {
+    templeName: "Palmyra New York",
+    location: "Palmyra, New York",
+    dedicated: "2000, April, 6",
+    area: 10800,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/palmyra-new-york/400x250/palmyra-new-york-mormon-temple-882900-high-res-print.jpg"
+  },
+  {
+    templeName: "Salt Lake Temple",
+    location: "Salt Lake City, Utah",
+    dedicated: "1893, April, 6",
+    area: 253015,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple7.jpg"
+  },
+  {
+    templeName: "Columbia SC Temple",
+    location: "Hopkins, South Carolina",
+    dedicated: "1999, December, 5",
+    area: 10700,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/columbia-south-carolina/400x640/columbia-south-carolina-temple-1468854-wallpaper.jpg"
+  },
+  {
+    templeName: "Atlanta Georgia Temple",
+    location: "Sandy Springs, Georgia",
+    dedicated: "1983, June, 1",
+    area: 34500,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/atlanta-georgia/400x250/atlanta-georgia-mormon-temple-900182-wallpaper.jpg"
+  }
+];
+  const templeContainer = document.querySelector(".temples-main");
