@@ -111,7 +111,7 @@ h1 {
 
 h2 {
     font-size: 1.8em;
-    color: var(--tertiary-color);
+    color: var(--primary-color);
     margin-top: 0;
     text-align: center;
     border: var(--tertiary-color) solid 2px;
