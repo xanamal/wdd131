@@ -1,5 +1,19 @@
 
 
+const hamButton = document.querySelector("#hamburgerMenu");
+const navigation = document.querySelector(".menulist");
+const menuItems = document.querySelectorAll(".menuitem");
+const pageTitle = document.querySelector("h1");
+
+menuItems.forEach(menuItem => {
+    menuItem.addEventListener("click", () => {
+        const currentActive = document.querySelector(".active");
+        currentActive.classList.toggle("active");
+        menuItem.classList.toggle("active");
+        pageTitle.textContent = menuItem.textContent;
+    });
+});
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -92,3 +106,54 @@ const temples = [
   }
 ];
   const templeContainer = document.querySelector(".temples-main");
+
+  const main = document.querySelector("main");
+
+  function templecard(temple) {
+    const figure = document.createElement("figure");
+    figure.classList.add("card");
+    const caption = document.createElement("figcaption");
+    const name = document.createElement("h2");
+    name.textContent = temple.templeName;
+    caption.appendChild(name);
+    const location = document.createElement("p");
+    const locationlabel = document.createElement("span");
+    const locationvalue = document.createElement("span");
+    locationlabel.textContent = "Location: ";
+    locationvalue.textContent = temple.location;
+    location.appendChild(locationlabel);
+    location.appendChild(locationvalue);
+    caption.appendChild(location);
+    const dedication = document.createElement("p");
+    const dedicationlabel = document.createElement("span");
+    const dedicationvalue = document.createElement("span");
+    dedicationlabel.textContent = "Dedication: ";
+    dedicationvalue.textContent = temple.dedicated;
+    dedication.appendChild(dedicationlabel);
+    dedication.appendChild(dedicationvalue);
+    caption.appendChild(dedication);
+    const area = document.createElement("p");
+    const arealabel = document.createElement("span");
+    const areavalue = document.createElement("span");
+    arealabel.textContent = "Size: ";
+    areavalue.textContent = temple.area;
+    area.appendChild(arealabel);
+    area.appendChild(areavalue);
+    caption.appendChild(area);
+    figure.appendChild(caption);
+    const image = document.createElement("img");
+    image.src = temple.imageUrl;
+    image.alt = `Image of ${temple.templeName}`;
+    image.loading = "lazy";
+    /*image.height = "250";
+    image.width = "400";/**/
+    figure.appendChild(image);
+    return figure;
+}
+
+temples.forEach(temple => { 
+    main.appendChild(templecard(temple));
+});
+
+
+menuitems.forEach(menuitem => menuitem.addEventListener("click", menuitemclicked));
