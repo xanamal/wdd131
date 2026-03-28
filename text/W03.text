@@ -37,3 +37,8 @@ One of the most densely populated countries in the world
 Very safe with a high police presence
 
 Surrounded almost entirely by France, with a coastline on the Mediterranean Sea
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
