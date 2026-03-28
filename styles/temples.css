@@ -42,6 +42,11 @@ header span {
     border-radius: 5px;
 }
 
+img {
+    max-width: clamp(150px, 1.5em, 150px);
+    height: clamp(150px, 1.5em, 150px);
+}
+
 nav ul {
     list-style: none;
     display: flex;
