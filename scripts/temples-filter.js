@@ -5,15 +5,6 @@ const navigation = document.querySelector(".menulist");
 const menuItems = document.querySelectorAll(".menuitem");
 const pageTitle = document.querySelector("h1");
 
-menuItems.forEach(menuItem => {
-    menuItem.addEventListener("click", () => {
-        const currentActive = document.querySelector(".active");
-        currentActive.classList.toggle("active");
-        menuItem.classList.toggle("active");
-        pageTitle.textContent = menuItem.textContent;
-    });
-});
-
 const temples = [
   {
     templeName: "Aba Nigeria",
