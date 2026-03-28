@@ -105,7 +105,8 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/atlanta-georgia/400x250/atlanta-georgia-mormon-temple-900182-wallpaper.jpg"
   }
 ];
-  const templeContainer = document.querySelector(".temples-main");
+  
+const templeContainer = document.querySelector(".temples-main");
 
   const main = document.querySelector("main");
 
@@ -151,9 +152,44 @@ const temples = [
     return figure;
 }
 
+function menuitemclicked(event) {
+    main.textContent = "";
+  switch (event.target.textContent) {
+    case "All":
+      temples.forEach(temple => { 
+        main.appendChild(templecard(temple));
+      });
+      break;
+    case "Old":
+      temples.filter(temple => Number(temple.dedicated.split(",")[0]) < 1900).forEach(temple => { 
+        main.appendChild(templecard(temple));
+      });
+      break;
+    case "New":
+      temples.filter(temple => Number(temple.dedicated.split(",")[0]) > 2000).forEach(temple => { 
+        main.appendChild(templecard(temple));
+      });
+      break;
+    case "Large":
+      temples.filter(temple => Number(temple.area) > 90000).forEach(temple => { 
+        main.appendChild(templecard(temple));
+      });
+      break;
+    case "Small":
+      temples.filter(temple => Number(temple.area) < 10000).forEach(temple => { 
+        main.appendChild(templecard(temple));
+      });
+      break;
+  }
+}
+
 temples.forEach(temple => { 
     main.appendChild(templecard(temple));
 });
 
 
 menuitems.forEach(menuitem => menuitem.addEventListener("click", menuitemclicked));
+
+
+
+
