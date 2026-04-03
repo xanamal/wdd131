@@ -14,7 +14,9 @@
 </head>
 <body>
 
-    <h1>Product Review Form</h1>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
 
     <form action="#" method="post">
         <label for="name">Name:</label>
@@ -26,14 +28,32 @@
         <label for="product">Product:</label>
         <input type="text" id="product" name="product" required>
 
-        <label for="rating">Rating:</label>
-        <select id="rating" name="rating" required>
-            <option value="1">1 Star</option>
-            <option value="2">2 Stars</option>
-            <option value="3">3 Stars</option>
-            <option value="4">4 Stars</option>
-            <option value="5">5 Stars</option>
-        </select>
+        <p>Overall Rating</p>
+
+<label>
+  <input type="radio" name="rating" value="1">
+  ★
+</label><br>
+
+<label>
+  <input type="radio" name="rating" value="2">
+  ★★
+</label><br>
+
+<label>
+  <input type="radio" name="rating" value="3">
+  ★★★
+</label><br>
+
+<label>
+  <input type="radio" name="rating" value="4">
+  ★★★★
+</label><br>
+
+<label>
+  <input type="radio" name="rating" value="5">
+  ★★★★★
+</label>
 
         <p>Which features did you find useful in the product? (Check all that apply)</p>
 
