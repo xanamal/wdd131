@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD,131,Form Xanen Gilbert</title>
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
     <meta name="description" content="This is a course about dynamic web fundamentals, and a insight to Xanen Gilbert a inspiring Web Developer.">
     <meta name="author" content="Xanen Gilbert">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
         <h1>Product Review Form</h1>
     </header>
 
-    <form action="#" method="post">
+    <form class="review-form" action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -30,27 +30,27 @@
 
         <p>Overall Rating</p>
 
-        <label>
+        <label class="rating">
         <input type="radio" name="rating" value="1">
         ★
         </label><br>
 
-        <label>
+        <label class="rating">
         <input type="radio" name="rating" value="2">
         ★★
         </label><br>
 
-        <label>
+        <label class="rating">
         <input type="radio" name="rating" value="3">
         ★★★
         </label><br>
 
-        <label>
+        <label class="rating">
         <input type="radio" name="rating" value="4">
         ★★★★
         </label><br>
 
-        <label>
+        <label class="rating">
         <input type="radio" name="rating" value="5">
         ★★★★★
         </label>
@@ -63,7 +63,7 @@
         <label><input type="checkbox" name="features" value="design"> Design</label>
         <br><br>
 
-        <label for="review">Review:</label>
+        <label class="review-label" for="review">Review:</label>
         <textarea id="review" name="review" rows="4" required></textarea>
 
         <button type="submit">Submit Review</button>
