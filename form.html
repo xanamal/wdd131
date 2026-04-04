@@ -51,12 +51,12 @@
         <input type="date" id="install-date" name="install-date" required>
 
         <p>Which features did you find useful in the product? (Check all that apply)</p>
-
-        <label><input type="checkbox" id="feature-durability" name="features" value="durability"> Durability</label><br>
-        <label><input type="checkbox" id="feature-ease" name="features" value="ease"> Ease of Use</label><br>
-        <label><input type="checkbox" id="feature-performance" name="features" value="performance"> Performance</label><br>
-        <label><input type="checkbox" id="feature-design" name="features" value="design"> Design</label>
-        <br><br>
+        <select name="features" id="features" multiple>
+            <option value="durability">Durability</option>
+            <option value="ease">Ease of Use</option>
+            <option value="performance">Performance</option>
+            <option value="design">Design</option>
+        </select>
 
         <label class="review-label" for="review">Review:</label>
         <textarea id="review" name="review" rows="4" required></textarea>
