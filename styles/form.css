@@ -1,31 +1,53 @@
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #0516ff;
-    --tertiary-color: #111111;
-    --font-family: 'Times New Roman', sans-serif;
-    --font-size: 16px;
-    --line-height: 1.5;
-    --color1: #07f2f2;
-    --font-size-base: clamp(16px, 1.5vw, 20px);
-    --spacing: clamp(8px, 2vw, 24px);
-    --container-width: clamp(300px, 80%, 1200px);
-    --font-size-h1: clamp(24px, 5vw, 48px);
-    font-family: "Roboto Condensed", sans-serif;
+    --main-bg: #c5f0e4;
+    --form-bg: #47595c;
+    --dark-purple: #016a63;
+    --white: #ffffff;
+    --black: #111111;
+    --blue: #2a33cc;
+
+    --base-font: clamp(16px, 1.5vw, 20px);
+    --heading-font: clamp(28px, 4vw, 42px);
+    --space: clamp(10px, 2vw, 20px);
+    --form-width: clamp(300px, 90%, 650px);
 }
 
 h1 {
     text-align: center;
-    color: var(--tertiary-color);
+    color: var(--white);
+    background-color: var(--dark-purple);
+    padding: var(--space);
+}
 
-    margin-top: 20px;
+body {
+    background-color: var(--main-bg);
+    color: var(--black);
+    font-size: var(--base-font);
+    line-height: var(--line-height);
+    padding: var(--space);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 
-
 footer {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--form-bg);
+    color: var(--white);
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: var(--space);
+}
+
+.review-form {
+    width: var(--form-width);
+    margin: 0 auto;
+    padding: var(--space);
+    border: 1px solid #b8b0b8;
+    border-radius: 6px;
+    display: grid;
+    gap: var(--space);
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 5px;
 }
